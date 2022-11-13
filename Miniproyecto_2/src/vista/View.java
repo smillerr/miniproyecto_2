@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package vista;
-
+//import rsscaleLabel; 
 /**
  *
  * @author Juan Sebastian
@@ -15,6 +15,9 @@ public class View extends javax.swing.JFrame {
      */
     public View() {
         initComponents();
+        this.setLocationRelativeTo(this);
+        rsscalelabel.RSScaleLabel.setScaleLabel(fondoLabel, "src/Figuras.fondo/fondoGUI.png");
+        
     }
 
     /**
@@ -26,15 +29,31 @@ public class View extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnWhatFor = new javax.swing.JButton();
         btnJuego = new javax.swing.JButton();
         btnHowTo = new javax.swing.JButton();
+        fondoLabel = new javax.swing.JLabel();
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 56)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("MEMORABLE");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 47, -1, 96));
 
         btnWhatFor.setText("¿Para qué sirve?");
         btnWhatFor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -46,6 +65,7 @@ public class View extends javax.swing.JFrame {
                 btnWhatForActionPerformed(evt);
             }
         });
+        getContentPane().add(btnWhatFor, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 273, 133, 50));
 
         btnJuego.setText("Jugar");
         btnJuego.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -54,6 +74,7 @@ public class View extends javax.swing.JFrame {
                 btnJuegoActionPerformed(evt);
             }
         });
+        getContentPane().add(btnJuego, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 207, 132, 49));
 
         btnHowTo.setText("¿Cómo jugar?");
         btnHowTo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -65,36 +86,10 @@ public class View extends javax.swing.JFrame {
                 btnHowToActionPerformed(evt);
             }
         });
+        getContentPane().add(btnHowTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(548, 290, 128, 50));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(btnWhatFor, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 138, Short.MAX_VALUE)
-                .addComponent(btnJuego, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(131, 131, 131)
-                .addComponent(btnHowTo, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(77, 77, 77))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(169, 169, 169)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(89, 89, 89)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(79, 79, 79)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnHowTo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnJuego, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnWhatFor, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(49, Short.MAX_VALUE))
-        );
+        fondoLabel.setText("jLabel2");
+        getContentPane().add(fondoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 361));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -120,7 +115,13 @@ public class View extends javax.swing.JFrame {
         newHowToPlay.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnHowToActionPerformed
-
+    /*private void setImagenFondo(JLabel fondoLabel, stru) {                                         
+        //Codigo cuando se ejecuta el boton, ¿Como jugar? 
+    
+        HowToPlay newHowToPlay = new HowToPlay();
+        newHowToPlay.setVisible(true);
+        this.dispose();
+    }   */          
     /**
      * @param args the command line arguments
      */
@@ -160,6 +161,8 @@ public class View extends javax.swing.JFrame {
     private javax.swing.JButton btnHowTo;
     private javax.swing.JButton btnJuego;
     private javax.swing.JButton btnWhatFor;
+    private javax.swing.JLabel fondoLabel;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
