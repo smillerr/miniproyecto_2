@@ -4,20 +4,21 @@
  */
 package vista;
 //import rsscaleLabel; 
+
+import javax.swing.JLabel;
+
 /**
  *
  * @author Juan Sebastian
  */
 public class View extends javax.swing.JFrame {
-
     /**
      * Creates new form View
      */
     public View() {
         initComponents();
-        this.setLocationRelativeTo(this);
-        rsscalelabel.RSScaleLabel.setScaleLabel(fondoLabel, "src/Figuras.fondo/fondoGUI.png");
-        
+        this.setLocationRelativeTo(this.rootPane);
+        rsscalelabel.RSScaleLabel.setScaleLabel(fondoLabel, "C:\\Juan Sebastian\\UNIVERSIDAD\\3ER SEMESTRE\\PROGRAMACION ORIENTADA A EVENTOS\\miniproyecto_2\\miniproyecto_2\\Miniproyecto_2\\src\\Figuras\\Fondo\\fondoGUI.png");
     }
 
     /**
@@ -89,11 +90,11 @@ public class View extends javax.swing.JFrame {
         getContentPane().add(btnHowTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(548, 290, 128, 50));
 
         fondoLabel.setText("jLabel2");
-        getContentPane().add(fondoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 361));
+        getContentPane().add(fondoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 361));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
     private void btnJuegoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJuegoActionPerformed
         //Codigo cuando se ejecuta el boton Jugar
         Juego newJuego = new Juego();
