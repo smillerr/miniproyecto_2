@@ -17,8 +17,8 @@ public class View extends javax.swing.JFrame {
      */
     public View() {
         initComponents();
-        this.setLocationRelativeTo(this.rootPane);
-        rsscalelabel.RSScaleLabel.setScaleLabel(fondoLabel, "C:\\Juan Sebastian\\UNIVERSIDAD\\3ER SEMESTRE\\PROGRAMACION ORIENTADA A EVENTOS\\miniproyecto_2\\miniproyecto_2\\Miniproyecto_2\\src\\Figuras\\Fondo\\fondoGUI.png");
+        this.setLocationRelativeTo(this);
+        rsscalelabel.RSScaleLabel.setScaleLabel(fondoLabel, "src/Figuras/Fondo/fondoGUI.png");
     }
 
     /**
