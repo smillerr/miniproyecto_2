@@ -4,7 +4,7 @@
  */
 package miniproyecto_2;
 
-import vista.View;
+import vista.MainWindow;
 
  /*
  * @author Juan Sebastian
@@ -16,7 +16,7 @@ public class Miniproyecto_2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        View vista = new View();
+        MainWindow vista = new MainWindow();
         vista.setVisible(true);
         System.out.println("Hello world");
     }

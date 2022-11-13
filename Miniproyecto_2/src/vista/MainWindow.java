@@ -11,11 +11,11 @@ import javax.swing.JLabel;
  *
  * @author Juan Sebastian
  */
-public class View extends javax.swing.JFrame {
+public class MainWindow extends javax.swing.JFrame {
     /**
      * Creates new form View
      */
-    public View() {
+    public MainWindow() {
         initComponents();
         this.setLocationRelativeTo(this);
         rsscalelabel.RSScaleLabel.setScaleLabel(fondoLabel, "src/Figuras/Fondo/fondoGUI.png");
@@ -49,15 +49,21 @@ public class View extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Menú principal");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 56)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 0, 56)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("MEMORABLE");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 47, -1, 96));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 90, -1, 96));
 
+        btnWhatFor.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 1, 36)); // NOI18N
+        btnWhatFor.setForeground(new java.awt.Color(255, 255, 255));
         btnWhatFor.setText("¿Para qué sirve?");
-        btnWhatFor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnWhatFor.setBorder(null);
+        btnWhatFor.setBorderPainted(false);
+        btnWhatFor.setContentAreaFilled(false);
+        btnWhatFor.setFocusPainted(false);
         btnWhatFor.setMaximumSize(new java.awt.Dimension(30, 18));
         btnWhatFor.setMinimumSize(new java.awt.Dimension(30, 18));
         btnWhatFor.setPreferredSize(new java.awt.Dimension(30, 18));
@@ -66,19 +72,29 @@ public class View extends javax.swing.JFrame {
                 btnWhatForActionPerformed(evt);
             }
         });
-        getContentPane().add(btnWhatFor, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 273, 133, 50));
+        getContentPane().add(btnWhatFor, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 210, 60));
 
+        btnJuego.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 1, 36)); // NOI18N
+        btnJuego.setForeground(new java.awt.Color(255, 255, 255));
         btnJuego.setText("Jugar");
         btnJuego.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnJuego.setBorderPainted(false);
+        btnJuego.setContentAreaFilled(false);
+        btnJuego.setFocusPainted(false);
         btnJuego.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnJuegoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnJuego, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 207, 132, 49));
+        getContentPane().add(btnJuego, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 240, 132, 60));
 
+        btnHowTo.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 1, 36)); // NOI18N
+        btnHowTo.setForeground(new java.awt.Color(255, 255, 255));
         btnHowTo.setText("¿Cómo jugar?");
         btnHowTo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnHowTo.setBorderPainted(false);
+        btnHowTo.setContentAreaFilled(false);
+        btnHowTo.setFocusPainted(false);
         btnHowTo.setMaximumSize(new java.awt.Dimension(30, 18));
         btnHowTo.setMinimumSize(new java.awt.Dimension(30, 18));
         btnHowTo.setPreferredSize(new java.awt.Dimension(30, 18));
@@ -87,9 +103,7 @@ public class View extends javax.swing.JFrame {
                 btnHowToActionPerformed(evt);
             }
         });
-        getContentPane().add(btnHowTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(548, 290, 128, 50));
-
-        fondoLabel.setText("jLabel2");
+        getContentPane().add(btnHowTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 240, 180, 60));
         getContentPane().add(fondoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 361));
 
         pack();
@@ -97,7 +111,7 @@ public class View extends javax.swing.JFrame {
     
     private void btnJuegoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJuegoActionPerformed
         //Codigo cuando se ejecuta el boton Jugar
-        Juego newJuego = new Juego();
+        BeforeGame newJuego = new BeforeGame();
         newJuego.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnJuegoActionPerformed
@@ -140,20 +154,21 @@ public class View extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(View.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(View.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(View.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(View.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new View().setVisible(true);
+                new MainWindow().setVisible(true);
             }
         });
     }
