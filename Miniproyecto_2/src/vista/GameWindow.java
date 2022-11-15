@@ -9,14 +9,46 @@ package vista;
  * @author Juan Sebastian
  */
 public class GameWindow extends javax.swing.JFrame {
-
     /**
      * Creates new form GameWindow
      */
     public GameWindow() {
         initComponents();
-        this.setLocationRelativeTo(this);
-        rsscalelabel.RSScaleLabel.setScaleLabel(fondoLabel, "src/Figuras/Fondo/fondoGUI.png");
+       // Poner imagenes de fondo, fila 1 del gridBBag
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_0_0, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_0_1, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_0_2, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_0_3, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_0_4, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_0_5, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_0_6, "src/Figuras/Fondo/test.png");
+       // Poner imagenes de fondo, fila 2 del gridBBag
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_1_0, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_1_1, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_1_2, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_1_3, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_1_4, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_1_5, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_1_6, "src/Figuras/Fondo/test.png");
+       // Poner imagenes de fondo, fila 3 del gridBBag
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_2_0, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_2_1, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_2_2, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_2_3, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_2_4, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_2_5, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_2_6, "src/Figuras/Fondo/test.png");
+       // Poner imagenes de fondo, fila 4 del gridBBag
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_3_0, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_3_1, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_3_2, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_3_3, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_3_4, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_3_5, "src/Figuras/Fondo/test.png");
+       rsscalelabel.RSScaleLabel.setScaleLabel(ficha_3_6, "src/Figuras/Fondo/test.png");
+       // Poner imagen de fondo
+       rsscalelabel.RSScaleLabel.setScaleLabel(fondoLabel, "src/Figuras/Fondo/fondoGame.png");
+
     }
 
     /**
@@ -27,23 +59,367 @@ public class GameWindow extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
+        jPanel2 = new javax.swing.JPanel();
+        ficha_1_0 = new javax.swing.JLabel();
+        ficha_0_0 = new javax.swing.JLabel();
+        ficha_0_1 = new javax.swing.JLabel();
+        ficha_0_2 = new javax.swing.JLabel();
+        ficha_0_3 = new javax.swing.JLabel();
+        ficha_0_4 = new javax.swing.JLabel();
+        ficha_1_1 = new javax.swing.JLabel();
+        ficha_1_2 = new javax.swing.JLabel();
+        ficha_1_4 = new javax.swing.JLabel();
+        ficha_1_3 = new javax.swing.JLabel();
+        ficha_1_5 = new javax.swing.JLabel();
+        ficha_0_5 = new javax.swing.JLabel();
+        ficha_0_6 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        ficha_1_6 = new javax.swing.JLabel();
+        ficha_2_1 = new javax.swing.JLabel();
+        ficha_2_0 = new javax.swing.JLabel();
+        ficha_2_2 = new javax.swing.JLabel();
+        ficha_2_3 = new javax.swing.JLabel();
+        ficha_2_4 = new javax.swing.JLabel();
+        ficha_2_5 = new javax.swing.JLabel();
+        ficha_3_3 = new javax.swing.JLabel();
+        ficha_2_6 = new javax.swing.JLabel();
+        ficha_3_1 = new javax.swing.JLabel();
+        ficha_3_0 = new javax.swing.JLabel();
+        ficha_3_2 = new javax.swing.JLabel();
+        ficha_3_4 = new javax.swing.JLabel();
+        ficha_3_5 = new javax.swing.JLabel();
+        ficha_3_6 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        music = new javax.swing.JToggleButton();
+        jLabel5 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         fondoLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("MEMORABLE ");
+        setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 1, 48)); // NOI18N
+        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel2.setForeground(new java.awt.Color(23, 15, 15));
+        jPanel2.setOpaque(false);
+        jPanel2.setLayout(new java.awt.GridBagLayout());
+
+        ficha_1_0.setText("jLabel1");
+        ficha_1_0.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        jPanel2.add(ficha_1_0, gridBagConstraints);
+
+        ficha_0_0.setText("jLabel1");
+        ficha_0_0.setPreferredSize(new java.awt.Dimension(90, 90));
+        ficha_0_0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ficha_0_0MouseClicked(evt);
+            }
+        });
+        ficha_0_0.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ficha_0_0KeyPressed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        jPanel2.add(ficha_0_0, gridBagConstraints);
+
+        ficha_0_1.setText("jLabel1");
+        ficha_0_1.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        jPanel2.add(ficha_0_1, gridBagConstraints);
+
+        ficha_0_2.setText("jLabel1");
+        ficha_0_2.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        jPanel2.add(ficha_0_2, gridBagConstraints);
+
+        ficha_0_3.setText("jLabel1");
+        ficha_0_3.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 0;
+        jPanel2.add(ficha_0_3, gridBagConstraints);
+
+        ficha_0_4.setText("jLabel1");
+        ficha_0_4.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 0;
+        jPanel2.add(ficha_0_4, gridBagConstraints);
+
+        ficha_1_1.setText("jLabel1");
+        ficha_1_1.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        jPanel2.add(ficha_1_1, gridBagConstraints);
+
+        ficha_1_2.setText("jLabel1");
+        ficha_1_2.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        jPanel2.add(ficha_1_2, gridBagConstraints);
+
+        ficha_1_4.setText("jLabel1");
+        ficha_1_4.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 1;
+        jPanel2.add(ficha_1_4, gridBagConstraints);
+
+        ficha_1_3.setText("jLabel1");
+        ficha_1_3.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 1;
+        jPanel2.add(ficha_1_3, gridBagConstraints);
+
+        ficha_1_5.setText("jLabel1");
+        ficha_1_5.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 1;
+        jPanel2.add(ficha_1_5, gridBagConstraints);
+
+        ficha_0_5.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 0;
+        jPanel2.add(ficha_0_5, gridBagConstraints);
+
+        ficha_0_6.setText("jLabel1");
+        ficha_0_6.setPreferredSize(new java.awt.Dimension(90, 90));
+        jPanel2.add(ficha_0_6, new java.awt.GridBagConstraints());
+
+        jLabel15.setText("jLabel1");
+        jLabel15.setPreferredSize(new java.awt.Dimension(80, 80));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 0;
+        jPanel2.add(jLabel15, gridBagConstraints);
+
+        ficha_1_6.setText("jLabel1");
+        ficha_1_6.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 1;
+        jPanel2.add(ficha_1_6, gridBagConstraints);
+
+        ficha_2_1.setText("jLabel1");
+        ficha_2_1.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        jPanel2.add(ficha_2_1, gridBagConstraints);
+
+        ficha_2_0.setText("jLabel1");
+        ficha_2_0.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        jPanel2.add(ficha_2_0, gridBagConstraints);
+
+        ficha_2_2.setText("jLabel1");
+        ficha_2_2.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        jPanel2.add(ficha_2_2, gridBagConstraints);
+
+        ficha_2_3.setText("jLabel1");
+        ficha_2_3.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 2;
+        jPanel2.add(ficha_2_3, gridBagConstraints);
+
+        ficha_2_4.setText("jLabel1");
+        ficha_2_4.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 2;
+        jPanel2.add(ficha_2_4, gridBagConstraints);
+
+        ficha_2_5.setText("jLabel1");
+        ficha_2_5.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 2;
+        jPanel2.add(ficha_2_5, gridBagConstraints);
+
+        ficha_3_3.setText("jLabel1");
+        ficha_3_3.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 3;
+        jPanel2.add(ficha_3_3, gridBagConstraints);
+
+        ficha_2_6.setText("jLabel1");
+        ficha_2_6.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 2;
+        jPanel2.add(ficha_2_6, gridBagConstraints);
+
+        ficha_3_1.setText("jLabel1");
+        ficha_3_1.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        jPanel2.add(ficha_3_1, gridBagConstraints);
+
+        ficha_3_0.setText("jLabel1");
+        ficha_3_0.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 3;
+        jPanel2.add(ficha_3_0, gridBagConstraints);
+
+        ficha_3_2.setText("jLabel1");
+        ficha_3_2.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 3;
+        jPanel2.add(ficha_3_2, gridBagConstraints);
+
+        ficha_3_4.setText("jLabel1");
+        ficha_3_4.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 3;
+        jPanel2.add(ficha_3_4, gridBagConstraints);
+
+        ficha_3_5.setText("jLabel1");
+        ficha_3_5.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 3;
+        jPanel2.add(ficha_3_5, gridBagConstraints);
+
+        ficha_3_6.setText("jLabel1");
+        ficha_3_6.setPreferredSize(new java.awt.Dimension(90, 90));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 3;
+        jPanel2.add(ficha_3_6, gridBagConstraints);
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 850, 380));
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setOpaque(false);
+
+        jLabel1.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Proximamente el juego estará listo");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, -1));
-        getContentPane().add(fondoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 370));
+        jLabel1.setText("Música:");
+
+        jLabel2.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Jugador: ");
+
+        jLabel4.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 1, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Puntaje: ");
+
+        music.setText("ON");
+        music.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                musicActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 1, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Vidas: ");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jLabel2)
+                .addGap(125, 125, 125)
+                .addComponent(jLabel4)
+                .addGap(140, 140, 140)
+                .addComponent(jLabel5)
+                .addGap(133, 133, 133)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(music)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(music, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 870, 70));
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setOpaque(false);
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel6.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 1, 36)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Destapa la figura que cumpla con la siguiente condición: ");
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Condicion");
+        jLabel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 10, 70, 70));
+
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 490, 860, 80));
+        getContentPane().add(fondoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 600));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void musicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_musicActionPerformed
+        // TODO add your handling code here:
+        music.setText("OFF");
+    }//GEN-LAST:event_musicActionPerformed
+
+    private void ficha_0_0KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ficha_0_0KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ficha_0_0KeyPressed
+
+    private void ficha_0_0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ficha_0_0MouseClicked
+         // TODO add your handling code here:
+    }//GEN-LAST:event_ficha_0_0MouseClicked
+
+    
     /**
      * @param args the command line arguments
      */
@@ -80,7 +456,45 @@ public class GameWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel ficha_0_0;
+    private javax.swing.JLabel ficha_0_1;
+    private javax.swing.JLabel ficha_0_2;
+    private javax.swing.JLabel ficha_0_3;
+    private javax.swing.JLabel ficha_0_4;
+    private javax.swing.JLabel ficha_0_5;
+    private javax.swing.JLabel ficha_0_6;
+    private javax.swing.JLabel ficha_1_0;
+    private javax.swing.JLabel ficha_1_1;
+    private javax.swing.JLabel ficha_1_2;
+    private javax.swing.JLabel ficha_1_3;
+    private javax.swing.JLabel ficha_1_4;
+    private javax.swing.JLabel ficha_1_5;
+    private javax.swing.JLabel ficha_1_6;
+    private javax.swing.JLabel ficha_2_0;
+    private javax.swing.JLabel ficha_2_1;
+    private javax.swing.JLabel ficha_2_2;
+    private javax.swing.JLabel ficha_2_3;
+    private javax.swing.JLabel ficha_2_4;
+    private javax.swing.JLabel ficha_2_5;
+    private javax.swing.JLabel ficha_2_6;
+    private javax.swing.JLabel ficha_3_0;
+    private javax.swing.JLabel ficha_3_1;
+    private javax.swing.JLabel ficha_3_2;
+    private javax.swing.JLabel ficha_3_3;
+    private javax.swing.JLabel ficha_3_4;
+    private javax.swing.JLabel ficha_3_5;
+    private javax.swing.JLabel ficha_3_6;
     private javax.swing.JLabel fondoLabel;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JToggleButton music;
     // End of variables declaration//GEN-END:variables
 }
