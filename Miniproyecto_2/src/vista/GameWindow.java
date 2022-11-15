@@ -3,17 +3,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package vista;
-
+import modelo.Figura;
 /**
  *
  * @author Juan Sebastian
  */
 public class GameWindow extends javax.swing.JFrame {
+    private Figura newFigura = new Figura();
     /**
      * Creates new form GameWindow
      */
     public GameWindow() {
         initComponents();
+        this.setLocationRelativeTo(this);
        // Poner imagenes de fondo, fila 1 del gridBBag
        rsscalelabel.RSScaleLabel.setScaleLabel(ficha_0_0, "src/Figuras/Fondo/test.png");
        rsscalelabel.RSScaleLabel.setScaleLabel(ficha_0_1, "src/Figuras/Fondo/test.png");

@@ -17,6 +17,8 @@ public class HowToPlay extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(this);
         rsscalelabel.RSScaleLabel.setScaleLabel(fondoLabel, "src/Figuras/Fondo/fondoGUI.png");
+        rsscalelabel.RSScaleLabel.setScaleLabel(fondoLabel1, "src/Figuras/Fondo/HowToPlay.png");
+
     }
 
     /**
@@ -29,6 +31,7 @@ public class HowToPlay extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
+        fondoLabel1 = new javax.swing.JLabel();
         fondoLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -47,6 +50,7 @@ public class HowToPlay extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
+        getContentPane().add(fondoLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 540, 300));
         getContentPane().add(fondoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 660, 400));
 
         pack();
@@ -96,6 +100,7 @@ public class HowToPlay extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel fondoLabel;
+    private javax.swing.JLabel fondoLabel1;
     private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }

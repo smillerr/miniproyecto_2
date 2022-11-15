@@ -3,13 +3,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package vista;
+import modelo.Jugador;
 
 /**
  *
  * @author Juan Sebastian
  */
 public class BeforeGame extends javax.swing.JFrame {
-
+    private Jugador newJugador = new Jugador();
     /**
      * Creates new form Juego
      */
@@ -71,9 +72,8 @@ public class BeforeGame extends javax.swing.JFrame {
     private void nameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameFieldActionPerformed
         // TODO add your handling code here:
         // Lo ideal es que se guarde en la clase correspondiente con el atributo correspondiente 
-        String nombre;
-        nombre = nameField.getText();
-        System.out.println(nombre);
+        newJugador.setNombre(nameField.getText());
+        System.out.println(newJugador.getNombre());
         nameField.disable();
     }//GEN-LAST:event_nameFieldActionPerformed
 
