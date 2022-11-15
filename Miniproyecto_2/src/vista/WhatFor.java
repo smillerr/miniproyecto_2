@@ -29,6 +29,7 @@ public class WhatFor extends javax.swing.JFrame {
     private void initComponents() {
 
         btnBack = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         fondoLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -47,7 +48,12 @@ public class WhatFor extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
-        getContentPane().add(fondoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 780, 370));
+
+        jLabel1.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 1, 20)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("<html> <p> Memorable es un juego que te permite entrenar tu <p> capacidad de codificación y recuerdo de información espacial y visual. <p> <br> Este tipo de habilidades es relevante en la practica de <p> algunos deportes, reconocimiento de caras o <p> para recordar dónde guardamos nuestras cosas.");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 330, 200));
+        getContentPane().add(fondoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -96,5 +102,6 @@ public class WhatFor extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
     private javax.swing.JLabel fondoLabel;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
